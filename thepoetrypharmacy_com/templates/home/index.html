@@ -1,0 +1,87 @@
+{% extends "shared/_layout.html" %}
+{% block title_content %} Home {% endblock %}
+{% block main_content %}
+<!-- -------------------------------------- HERO ---------------------------------------->
+<div class="hero">
+    <h1>The Poetry Pharmacy</h1>
+    <em class="sub-heading">Tried-and-True Prescriptions for the Heart, Mind and Soul</em>
+    <input class="form-control" type="text", name="", placeholder="Search by Poem or Poet">
+    or <a href="poets">Meet One of the Doctors</a>
+</div>
+
+<!-- -------------------------------------- STATS ---------------------------------------->
+<div class="poetry_stats">
+    <div class="stat"> -1 Poems </div>
+    <div class="stat"> -1 Poets </div>
+    <div class="stat"> -1 Conditions </div>
+</div>
+
+<!-- -------------------------------------- RANDOM POEMS --------------------------------->
+<div class="container">
+    <h2>Today's Presciptions</h2>
+    <div class="row">
+        {% for p in poems %}
+            <div class="col-md poem_box">
+                <span class="poem_title">{{ p.title }}</span>
+                <br>
+                <span class="poem_body">{{ p.poem }}</span>
+                <br>
+                <span class="poem_author"> - {{ p.author }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ------------------------------------- WRITE TO US ---------------------------------->
+<div class="container">
+    <h2>Write To Us</h2>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <p>Whether you are suffering from loneliness, lack of courage, heartbreak, hopelessness,
+                or even from an excess of ego, there is something here to ease your pain.
+            </p>
+            <p>
+                With as much openness as one sees fit, write to us how you are feeling today. 
+                We then hope you find your presciption as a balm, a comfort, a smile, a succour, 
+                or simply a help to embrace your feelings in certain situations. 
+            </p>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <input class="col-md-6" type="text", name="", placeholder="How are you feeling today?">
+        <div class="col-md-3"></div>
+    </div>
+
+</div>
+<!-- -------------------------------------- DOCTORS ---------------------------------------->
+<div class="container">
+    <h2>Meet the Doctors</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="static/img/Allison_Adelle_Hedge_Coke.jpg" alt="Allison_Adelle_Hedge_Coke">
+        </div>
+        <div class="col-md-4">
+            <img src="static/img/Camille_Rankine.png" alt="Camille_Rankine">
+        </div>
+        <div class="col-md-4">
+            <img src="static/img/Heid_E_Erdrich.jpg" alt="Heid_E_Erdrich">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="static/img/Michael_Dickman.jpg" alt="Michael_Dickman">
+        </div>
+        <div class="col-md-4">
+            <img src="static/img/James_Baldwin.jpg" alt="James_Baldwin">
+        </div>
+        <div class="col-md-4">
+            <img src="static/img/Sylvia_Plath.jpg" alt="Sylvia_Plath">
+        </div>  
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "shared/_layout.html" %}
+{% block title_content %} Poets {% endblock %}
+{% block main_content %}
+
+    <h2>Poets</h2>
+
+    <p> Please meet your Doctors. </p>
+
+    {% for p in poems %}
+        <div>
+            <span class="title">{{ p.poet }}</span>
+            <span class="title">{{ p.title }}</span>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,84 @@
+body {
+    background-color: #fffaef;
+}
+
+nav {
+    background-color: #fffaef;
+    padding: 10px;
+    font-size: 20px;
+    color: #662225;
+}
+
+nav a {
+    color: #662225;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #b51d0a;
+    text-align: center;
+    padding: 50px 0px;
+    color:#fffaef;
+}
+
+.hero a {
+    color: #fffaef;
+}
+
+.hero h1 {
+    font-size: 64px;
+} 
+
+.hero input {
+    margin-top: 15px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poetry_stats{
+    text-align: center;
+    background-color: #fffaef;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.stat{
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.main_content {
+    padding: 0px;
+    margin: 0px;
+}
+
+.poem_title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    color:#662225;
+}
+
+.poem_box {
+    background-color:#ead39c;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #5d5e3c;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 20px;
+    color: #662225;
+}
+
+img {
+    height: 400px;
+    width: auto;
+}
+
+
+
+

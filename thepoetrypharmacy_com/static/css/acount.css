@@ -1,0 +1,22 @@
+input {
+    margin: 10px;
+}
+
+form {
+    padding: 20px;
+    background-color:  white;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding-right: 40px;
+}
+
+body {
+    background-color: #fffaef;
+}
+
+.actions, h2 {
+    text-align: center;
+}

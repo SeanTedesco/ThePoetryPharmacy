@@ -1,0 +1,41 @@
+{% extends "shared/_layout.html" %}
+{% block title_content %} Login {% endblock %}
+{% block main_content %}
+
+<style>
+    input {
+        margin: 10px;
+    }
+
+    form {
+        padding: 20px;
+        background-color:  white;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        border-radius: 10px;
+        padding-right: 40px;
+    }
+
+    body {
+        background-color: #fffaef;
+    }
+
+    .actions, h2 {
+        text-align: center;
+    }
+</style>
+
+<form action="", method="POST">
+    <h2>Login</h2>
+
+    <input class="form-control" type="email", name="email", placeholder="email" required>
+    <input class="form-control" type="password" name="password", placeholder="password" required>
+    <div class="actions">
+        <button type="submit" class="btn btn-outline-success" >Login</button> or <a href="register" class="btn btn-outline-danger">Register</a>
+    </div>
+</form>
+
+
+{% endblock %}
