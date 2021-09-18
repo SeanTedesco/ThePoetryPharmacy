@@ -9,7 +9,7 @@ This will be a learning exercise using Flask, SQLAlchemy, and general front-end 
 1. Create a virtual environment and activate it.
 ```
 python3 -m venv pharm-venv
-. /pharm-venv/bin/activate
+. thepoetrypharmacy_com/pharm-venv/bin/activate
 ```
 
 1.1 Verifiy you are using the correct python using the command `which python`. It should have an output of:

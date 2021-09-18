@@ -2,6 +2,11 @@ body {
     background-color: #fffaef;
 }
 
+.main_content {
+    padding: 0px;
+    margin: 0px;
+}
+
 nav {
     background-color: #fffaef;
     padding: 10px;
@@ -43,29 +48,26 @@ nav a {
     border-bottom: 1px solid #b4b4b4;
 }
 
-.stat{
+.poetry_stats .stat{
     display: inline-block;
     padding: 10px;
     min-width: 150px;
 }
 
-.main_content {
-    padding: 0px;
-    margin: 0px;
+.poem_box {
+    background-color:#ead39c;
+    padding: 5px 5px;
+    border-radius: 12px;
+    border: 1px solid #5d5e3c;
 }
 
-.poem_title {
+.poem_box .poem_title {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
     margin-left: auto;
     margin-right: auto;
     font-size: large;
     color:#662225;
-}
-
-.poem_box {
-    background-color:#ead39c;
-    padding: 10px;
-    border-radius: 12px;
-    border: 1px solid #5d5e3c;
 }
 
 .container h2 {
@@ -79,6 +81,19 @@ img {
     width: auto;
 }
 
+footer {
+    padding: 20px;
+    background-color: #662225;
+    margin: 5px;
+}
 
+footer .signature {
+    text-align: left;
+    color: #fffaef;
+}
 
-
+footer .logo {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}

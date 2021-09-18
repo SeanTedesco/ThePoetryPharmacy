@@ -20,15 +20,25 @@
 <div class="container">
     <h2>Today's Presciptions</h2>
     <div class="row">
-        {% for p in poems %}
-            <div class="col-md poem_box">
-                <span class="poem_title">{{ p.title }}</span>
+        <div class="col-md-6 poem_box">
+            <span class="poem_title">{{ poems[0].title }}</span>
+            <br>
+            <span class="poem_body">{{ poems[0].poem }}</span>
+            <br>
+            <span class="poem_author"> - {{ poems[0].author }}</span>
+        </div>
+        <div class="col-md-6 ">
+            {% for p in poems[1:] %}
+                <div class="row-sm poem_box">
+                    <span class="poem_title">{{ p.title }}</span>
+                    <br>
+                    <span class="poem_body">{{ p.poem[:100] }} ... </span>
+                    <br>
+                    <span class="poem_author"> - {{ p.author }}</span>
+                </div>
                 <br>
-                <span class="poem_body">{{ p.poem }}</span>
-                <br>
-                <span class="poem_author"> - {{ p.author }}</span>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 
