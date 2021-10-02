@@ -1,6 +1,6 @@
 import sqlalchemy as sa
 
-from thepoetrypharmacy_com.data.modelbase import SqlAlchemyBase
+from data.modelbase import SqlAlchemyBase
 
 class Poem(SqlAlchemyBase):
     __tablename__ = 'poems'
