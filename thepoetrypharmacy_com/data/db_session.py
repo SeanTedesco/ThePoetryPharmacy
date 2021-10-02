@@ -1,5 +1,6 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
+from data.modelbase import SqlAlchemyBase
 
 factory = None 
 
@@ -12,5 +13,9 @@ def global_init(db_file: str):
 
     
     connection_str = 'sqlite:///' + db_file.strip()
+    print(f'Connecting to DB with {connection_str}')
     engine = sa.create_engine(connection_str, echo=False)
     factory = orm.sessionmaker(bind=engine)
+
+    import data.__all_models 
+    SqlAlchemyBase.metadata.create_all(engine)

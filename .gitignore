@@ -1,5 +1,4 @@
 *.DS_Store
-
 pharm-venv/
-
 __pycache__/
+db/
