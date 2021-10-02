@@ -12,6 +12,7 @@ class Poet(SqlAlchemyBase):
     country = sa.Column(sa.String, index=True)
     summary = sa.Column(sa.String)
     pf_link = sa.Column(sa.String)
+    poet_image_url = sa.Column(sa.String)
 
     def __repr__(self) -> str:
         return f'<poet: {self.name}>'
