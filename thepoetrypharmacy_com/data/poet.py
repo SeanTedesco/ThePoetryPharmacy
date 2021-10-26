@@ -1,7 +1,7 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
-from data.modelbase import SqlAlchemyBase
-from data.poem import Poem
+from thepoetrypharmacy_com.data.modelbase import SqlAlchemyBase
+from thepoetrypharmacy_com.data.poem import Poem
 
 class Poet(SqlAlchemyBase):
     __tablename__ = 'poets'

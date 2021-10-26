@@ -1,5 +1,5 @@
-from data.poem import Poem
-from data.poet import Poet
-from data.user import User
+from thepoetrypharmacy_com.data.poem import Poem
+from thepoetrypharmacy_com.data.poet import Poet
+from thepoetrypharmacy_com.data.user import User
 
 # and any future models go here! 

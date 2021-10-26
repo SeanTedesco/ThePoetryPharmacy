@@ -3,7 +3,7 @@ import datetime
 
 from sqlalchemy.sql.expression import null
 
-from data.modelbase import SqlAlchemyBase
+from thepoetrypharmacy_com.data.modelbase import SqlAlchemyBase
 
 class User(SqlAlchemyBase):
     __tablename__ = 'users'

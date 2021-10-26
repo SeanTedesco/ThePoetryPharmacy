@@ -2,7 +2,7 @@ from enum import auto
 import sqlalchemy as sa
 import datetime
 import sqlalchemy.orm as orm
-from data.modelbase import SqlAlchemyBase
+from thepoetrypharmacy_com.data.modelbase import SqlAlchemyBase
 
 class Poem(SqlAlchemyBase):
     __tablename__ = 'poems'

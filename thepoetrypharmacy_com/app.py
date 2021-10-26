@@ -1,6 +1,8 @@
+import sys
+sys.path.append('../')
 import flask
 import os
-import data.db_session as db_session
+import thepoetrypharmacy_com.data.db_session as db_session
 
 app = flask.Flask(__name__)
 

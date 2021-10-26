@@ -1,6 +1,6 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
-from data.modelbase import SqlAlchemyBase
+from thepoetrypharmacy_com.data.modelbase import SqlAlchemyBase
 
 factory = None 
 
@@ -17,5 +17,5 @@ def global_init(db_file: str):
     engine = sa.create_engine(connection_str, echo=False)
     factory = orm.sessionmaker(bind=engine)
 
-    import data.__all_models 
+    import thepoetrypharmacy_com.data.__all_models 
     SqlAlchemyBase.metadata.create_all(engine)
