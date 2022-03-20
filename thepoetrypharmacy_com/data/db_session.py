@@ -6,6 +6,7 @@ factory = None
 
 def global_init(db_file: str):
     global factory
+    
     if factory: return
 
     if not db_file or not db_file.strip():

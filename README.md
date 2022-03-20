@@ -26,3 +26,8 @@ pip install --upgrade pip setuptools
 ```
 pip install -r requirements.txt
 ```
+
+4. Run the App
+```
+python app.py
+```

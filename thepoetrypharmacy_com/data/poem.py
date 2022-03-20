@@ -16,8 +16,8 @@ class Poem(SqlAlchemyBase):
     tags = sa.Column(sa.String, index=True)
     popularity = sa.Column(sa.Integer, index=True)
 
-    poet_id = sa.Column(sa.Integer, sa.ForeignKey("poets.id"))
-    poet = orm.relation("Poet")
+    poet_id = sa.Column(sa.Integer, sa.ForeignKey('poets.id'))
+    poet = orm.relation('Poet')
 
     def __repr__(self) -> str:
         return f'<poem: {self.title} by {self.author}>'
